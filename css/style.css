@@ -1,8 +1,8 @@
-/* Put a red border around "boxes" to show layout on page.
+/* Put a red border around boxes to show layout on page.
  * Used only for development and testing.
  */
 * {
-  border: 1px solid red !important;
+  /*border: 1px solid red !important;*/
 }
 
 /* When calculating box sizes, include the padding, border and margin
@@ -15,6 +15,10 @@
   box-sizing: border-box;
 }
 
+* {
+  font-family: 'Raleway', sans-serif;
+}
+
 /* Basic 12 column grid framework to set layout of elements on page.
  */
 .grid {
@@ -24,6 +28,8 @@
 
 .row {
   width: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .col-1 {
@@ -72,4 +78,11 @@
 
 .col-12 {
   width: 100%;
+}
+
+.placeholder {
+  background-color: #ff4d4d;
+  color: white;
+  padding: 50px;
+  margin-top: 100px;
 }
